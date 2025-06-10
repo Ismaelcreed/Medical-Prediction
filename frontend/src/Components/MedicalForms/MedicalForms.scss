@@ -1,0 +1,108 @@
+.medical-form {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 1rem;
+
+    .row {
+        display: flex;
+        gap: 2rem;
+        margin-bottom: 1.5rem;
+
+        &.single {
+            display: block;
+        }
+    }
+    .blur-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        backdrop-filter: blur(6px);
+        background-color: rgba(0, 0, 0, 0.2);
+        z-index: 900;
+      }
+
+    .input-group {
+        position: relative;
+        flex: 1;
+
+        input,
+        select,
+        textarea {
+            width: 20rem;
+            padding: 1rem 0.5rem 0.25rem 0.5rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            background: none;
+            font-size: 1rem;
+            outline: none;
+            font-family: "Poppins", sans-serif;
+            &:focus,
+            &:not(:placeholder-shown) {
+                border-color: #6200ee;
+            }
+        }
+
+        select {
+            appearance: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            background: none;
+            cursor: pointer;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        label {
+            position: absolute;
+            top: 50%;
+            left: 0.5rem;
+            color: #888;
+            pointer-events: none;
+            transform: translateY(-50%);
+            transition: 0.2s ease all;
+            background: white;
+            padding: 0 0.25rem;
+            font-size: 1rem;
+        }
+
+        input:focus+label,
+        input:not(:placeholder-shown)+label,
+        select:focus+label,
+        select:not([value=""])+label,
+        textarea:focus+label,
+        textarea:not(:placeholder-shown)+label {
+            top: 0;
+            left: 0.4rem;
+            font-size: 0.75rem;
+            color: #6200ee;
+            font-weight: 600;
+            transform: translateY(-50%);
+        }
+    }
+
+    .select-label {
+        pointer-events: none;
+    }
+
+    button {
+        margin: 0 auto;
+        background: linear-gradient(90deg, #3017e8, #c50cbc);
+        font-family: 'Poppins', sans-serif;
+        color: white;
+        font-weight: 600;
+        border: none;
+        padding: 0.75rem 1.5rem;
+        border-radius: 6px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+
+
+        &:hover {
+            background-color: #3700b3;
+        }
+    }
+}

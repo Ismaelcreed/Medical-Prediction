@@ -1,0 +1,63 @@
+.WelcomePageContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    padding: 2rem;
+    overflow-y: hidden;
+
+  
+    h1 {
+      font-size: 3rem;
+      background: linear-gradient(90deg, #3017e8,#c50cbc, #8e2de2);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 1.5rem;
+    }
+  
+    .gif {
+      display: flex;
+      justify-content: center;
+      align-items : center;
+      margin: 1rem 0;
+  
+      img {
+        width: 150px;
+        height: auto;
+      }
+    }
+  
+    p {
+      width: 50%;
+      font-size: 1rem;
+      font-weight : light;
+      color: #5c0672;
+      margin: 0.5rem 0;
+    }
+  
+    .custom-class {
+      margin-top: 1.5rem;
+      padding: 0.75rem 1.5rem;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to right, #3017e8, #430579,#c50cbc);
+      color: white;
+      border: none;
+      border-radius: 25px;
+      font-size: 0.85rem;
+      cursor: pointer;
+      box-shadow: 0 4px 15px rgba(48, 23, 232, 0.3);
+      transition: all 0.3s ease;
+  
+      &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 20px rgba(48, 23, 232, 0.4);
+      }
+  
+      &:active {
+        transform: scale(0.98);
+      }
+    }
+  }
+  

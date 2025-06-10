@@ -1,0 +1,8 @@
+@import url(./styles/font.scss);
+
+#root {
+  margin: 0 auto;
+  font-family: "Poppins",sans-serif;
+  background-color: var(--backgroundColor);
+  overflow: hidden;
+}

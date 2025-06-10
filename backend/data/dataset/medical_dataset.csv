@@ -1,0 +1,21 @@
+age,sex_F,sex_M,symptomes,disease
+25,False,True,"Fièvre,Toux,Douleurs musculaires",Grippe
+45,True,False,"Fatigue extrême,Soif excessive,Vision trouble",Diabète
+60,False,True,"Essoufflement,Douleur thoracique,Transpiration",Infarctus du myocarde
+33,True,False,"Maux de tête intense,Vomissements,Raideur nuque",Méningite
+52,False,True,"Palpitations,Étourdissements,Peau froide",Arythmie cardiaque
+28,True,False,"Éternuements,Écoulement nasal,Démangeaisons yeux",Rhinite allergique
+70,False,True,"Raideur articulaire,Gonflement,Rougeur",Polyarthrite rhumatoïde
+19,True,False,"Éruption cutanée,Démangeaisons,Œdème",Urticaire
+40,False,True,"Nausées,Vomissements,Diarrhée",Gastro-entérite
+65,True,False,"Vertiges,Confusion,Trouble élocution",AVC
+37,False,True,"Fièvre élevée,Frissons,Sueurs",Malaria
+58,True,False,"Toux persistante,Perte poids,Sueurs nocturnes",Tuberculose
+22,False,True,"Douleur abdominale,Perte appétit,Nausées",Appendicite
+49,True,False,"Saignement gingival,Pâleur,Fatigue",Anémie
+31,False,True,"Brûlure urinaire,Fièvre,Douleur flanc",Infection urinaire
+43,True,False,"Raideur matinale,Fatigue,Douleurs musculaires",Fibromyalgie
+29,False,True,"Nez bouché,Toux,Mal de gorge",Rhume
+67,True,False,"Essoufflement,Sifflement respiratoire,Toux sèche",Asthme
+34,False,True,"Douleur oculaire,Photophobie,Larmoiement",Conjonctivite
+55,True,False,"Engourdissement visage,Faiblesse bras,Trouble parole",Accident ischémique transitoire
