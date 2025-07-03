@@ -112,6 +112,7 @@ Cela améliore l’expérience utilisateur, en particulier pour les personnes ma
 ## 🧠 Technologies utilisées
 
 - Python 3.11
+- node 20+
 - Flask & Flask-CORS
 - TensorFlow / Keras
 - scikit-learn / pandas / joblib
