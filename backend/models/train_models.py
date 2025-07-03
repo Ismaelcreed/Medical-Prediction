@@ -7,7 +7,7 @@ from tensorflow.keras.utils import to_categorical
 import joblib
 
 # Chargement des données
-data = pd.read_csv("../data/dataset/medical_dataset.csv")
+data = pd.read_csv("./data/dataset/medical_dataset.csv")
 print("Colonnes initiales :", data.columns.tolist())
 
 # 1. Encodage des symptômes
@@ -16,7 +16,7 @@ symptom_encoder = MultiLabelBinarizer()
 symptom_features = symptom_encoder.fit_transform(data['symptomes'])
 
 # Sauvegarde de l'encodeur de symptômes
-joblib.dump(symptom_encoder, "../models/symptom_encoder.pkl")
+joblib.dump(symptom_encoder, "./models/symptom_encoder.pkl")
 
 # Création du DataFrame des symptômes encodés
 symptom_df = pd.DataFrame(symptom_features, columns=symptom_encoder.classes_)
@@ -33,13 +33,13 @@ y_encoded = label_encoder.fit_transform(data["disease"])
 y = to_categorical(y_encoded)
 
 # Sauvegardes
-joblib.dump(label_encoder, "../models/label_encoder.pkl")
-joblib.dump(X.columns.tolist(), "../models/feature_columns.pkl")
+joblib.dump(label_encoder, "./models/label_encoder.pkl")
+joblib.dump(X.columns.tolist(), "./models/feature_columns.pkl")
 
 # 4. Normalisation
 scaler = StandardScaler()
 X_scaled = scaler.fit_transform(X)
-joblib.dump(scaler, "../models/scaler.pkl")
+joblib.dump(scaler, "./models/scaler.pkl")
 
 # 5. Entraînement
 X_train, X_test, y_train, y_test = train_test_split(X_scaled, y, test_size=0.2)
@@ -50,6 +50,6 @@ model = Sequential([
 ])
 model.compile(optimizer='adam', loss='categorical_crossentropy', metrics=['accuracy'])
 model.fit(X_train, y_train, epochs=50, batch_size=16, validation_split=0.2)
-model.save("../models/medical_model.h5")
+model.save("./models/medical_model.h5")
 
 print("✅ Entraînement réussi !")
