@@ -4,7 +4,7 @@ import os
 
 try:
     # Chargement du fichier
-    csv_path = "./dataset/Disease_symptom_and_patient_profile_dataset.csv"
+    csv_path = "./data/dataset/Disease_symptom_and_patient_profile_dataset.csv"
     if not os.path.exists(csv_path):
         raise FileNotFoundError(f"Fichier introuvable : {csv_path}")
 
@@ -39,7 +39,7 @@ try:
     df['age'] = scaler.fit_transform(df[['age']])
 
     # Export des données nettoyées
-    df.to_csv("clean_data.csv", index=False)
+    df.to_csv("./data/dataset/clean_data.csv", index=False)
     print("✅ Nettoyage terminé avec succès et exporté dans clean_data.csv")
 
 except Exception as e:
