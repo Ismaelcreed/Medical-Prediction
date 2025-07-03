@@ -66,7 +66,7 @@ pip install -r requirements.txt
 
 3. Entraîner le modèle :
 ```bash
-python training/train_model.py
+python models/train_model.py
 ```
 
 4. Lancer l'API :
@@ -98,7 +98,7 @@ python app.py
 
 Pour améliorer l’accessibilité et l’interaction, le projet SYMPTOMA propose une **fonction de lecture vocale** automatique. Lorsqu’une maladie est prédite, elle est non seulement affichée à l’écran mais également **prononcée** à haute voix à l’utilisateur.
 
-Cette fonctionnalité est implémentée côté **frontend (React)** grâce à la **Web Speech API (SpeechSynthesis)**, ou côté Python avec des bibliothèques comme `pyttsx3`.
+Cette fonctionnalité est implémentée côté **frontend (React)** grâce à la **Web Speech API (SpeechSynthesis)**.
 
 ### Exemple :
 > Symptômes : toux, fièvre, fatigue  
