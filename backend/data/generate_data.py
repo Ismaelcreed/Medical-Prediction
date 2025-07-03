@@ -62,6 +62,6 @@ df = pd.get_dummies(df, columns=['sex'])
 df = df[['age', 'sex_F', 'sex_M', 'symptomes', 'disease']]
 
 # Sauvegarde en CSV
-df.to_csv("medical_dataset.csv", index=False)
+df.to_csv("data/dataset/medical_dataset.csv", index=False)
 
 print("✅ Fichier CSV généré avec succès (20 entrées) dans data/medical_dataset.csv !")
