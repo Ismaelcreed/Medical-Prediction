@@ -3,4 +3,20 @@ flask-cors==4.0.0
 pandas==2.1.4
 scikit-learn==1.4.0
 numpy==1.26.3
-python-dotenv==1.0.1
+python-dotenv==1.0.1[Dally@archeasygpt ~]$ python -m venv venv311
+[Dally@archeasygpt ~]$ source venv311/bin/activate
+(venv311) [Dally@archeasygpt ~]$ cd Documents
+(venv311) [Dally@archeasygpt Documents]$ cd GitHUB
+bash: cd: GitHUB: Aucun fichier ou dossier de ce nom
+(venv311) [Dally@archeasygpt Documents]$ cd GitHub
+(venv311) [Dally@archeasygpt GitHub]$ cd RNA-2025
+(venv311) [Dally@archeasygpt RNA-2025]$ CD backend
+bash: CD : commande introuvable
+(venv311) [Dally@archeasygpt RNA-2025]$ cd backend
+(venv311) [Dally@archeasygpt backend]$ python app.py
+Traceback (most recent call last):
+  File "/home/Dally/Documents/GitHub/RNA-2025/backend/app.py", line 1, in <module>
+    from flask import Flask, request, jsonify
+ModuleNotFoundError: No module named 'flask'
+(venv311) [Dally@archeasygpt backend]$ 
+
